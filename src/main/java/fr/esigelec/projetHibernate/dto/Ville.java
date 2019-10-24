@@ -49,7 +49,7 @@ public class Ville {
 	}
 	
 	public String toString() {
-		return "Ville (id: "+id+", id_pays: "+id_pays+", nom : "+nom+", Habitants: "+nb_habitants+")";
+		return "Ville (id: "+id+", id_pays: "+id_pays+", nom : "+nom+", Habitants: "+nb_habitants+"Millions d'habitants)";
 	}
 
 }
