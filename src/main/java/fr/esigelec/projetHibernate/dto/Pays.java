@@ -4,7 +4,16 @@ public class Pays {
 	private int id;
 	private String nom;
 	private float superficie;
-
+	
+	public Pays() {
+		
+	}
+	
+	public Pays(String nom, float superficie) {
+		this.nom = nom;
+		this.superficie= superficie;
+	}
+	
 	public int getId() {
 		return id;
 	}
