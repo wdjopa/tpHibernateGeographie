@@ -1,5 +1,7 @@
 package fr.esigelec.projetHibernate;
 
+import fr.esigelec.projetHibernate.dto.*;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	Pays p = new Pays("Cameroun", 274000);
+    	Ville v = new Ville("Yaoundé", 25);
     }
 }

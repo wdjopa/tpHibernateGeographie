@@ -1,4 +1,4 @@
-package fr.esigelec.projetHibernate.dao.hibernate;
+package fr.esigelec.projetHibernate.dao;
 
 
 import java.util.List;
