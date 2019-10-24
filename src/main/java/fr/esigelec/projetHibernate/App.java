@@ -11,11 +11,14 @@ public class App
 {
     public static void main( String[] args )
     {
+    	VilleDAOImpl vDAO = new VilleDAOImpl();
     	PaysDAOImpl pDAO = new PaysDAOImpl();
     	Pays p = new Pays("Cameroun", 274000);
-    	
-    	pDAO.ajouter(p);
-    	
+    	Ville v = new Ville("Yaoundé", 25, p);
+    	Ville v2 = new Ville("Douala", 5, p);
+
+    	vDAO.ajouter(v2);
+    	vDAO.delete(v);
     	
     }
 }

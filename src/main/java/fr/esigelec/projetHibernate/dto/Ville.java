@@ -16,10 +16,15 @@ public class Ville {
 	public Ville() {
 		
 	}
-	
+
 	public Ville(String nom, int nbHabitants) {
 		this.nom = nom;
 		this.nbHabitants = nbHabitants ;
+	}
+	public Ville(String nom, int nbHabitants, Pays pays) {
+		this.nom = nom;
+		this.nbHabitants = nbHabitants ;
+		this.pays = pays;
 	}
 	
 	public int getId() {
