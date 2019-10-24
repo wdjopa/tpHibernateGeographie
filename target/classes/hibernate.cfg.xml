@@ -2,7 +2,7 @@
 <session-factory>
 <!--  Database connection settings  -->
 <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-<property name="connection.url">jdbc:mysql://localhost/annuaire?serverTimezone=UTC</property>
+<property name="connection.url">jdbc:mysql://localhost/bdd_geographie?serverTimezone=UTC</property>
 <property name="connection.username">root</property>
 <property name="connection.password"/>
 <!--  JDBC connection pool (use the built-in)  -->
@@ -17,6 +17,7 @@
 <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
 <!--  Echo all executed SQL to stdout  -->
 <property name="show_sql">true</property>
-<mapping resource="Voiture.hbm.xml"/>
+<mapping resource="Pays.hbm.xml"/>
+<mapping resource="Ville.hbm.xml"/>
 </session-factory>
 </hibernate-configuration>
