@@ -47,5 +47,9 @@ public class Ville {
 	public void setNbHabitants(int nb_habitants) {
 		this.nb_habitants = nb_habitants;
 	}
+	
+	public String toString() {
+		return "Ville (id: "+id+", id_pays: "+id_pays+", nom : "+nom+", Habitants: "+nb_habitants+")";
+	}
 
 }

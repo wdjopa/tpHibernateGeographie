@@ -33,4 +33,8 @@ public class Pays {
 	public void setSuperficie(float superficie) {
 		this.superficie = superficie;
 	}
+	
+	public String toString() {
+		return "Pays (id: "+id+", nom : "+nom+", Superficie: "+superficie+"km²)";
+	}
 }
