@@ -7,13 +7,10 @@
         <id name="id" column="id">
             <generator class="native"/>
         </id>
-        <property name="nom"  type="string"/>
-        <property name="nb_habitants"  type="integer"/> 		<!-- column ="prenom" par défaut-->
-        <property name="id_pays" type="integer"/>
-        
-	<!-- les types  peuvent etre trouvés automatiquement par hibernate avec la reflexion, il peut etre utile de les mettre pour le type Date par exemple, car il existe plusieurs classes date -->
-         
-	<many-to-one name="pays" column="id_pays" not-null="true"/> 
+        <property name="nom"  type="string" not-null="true"/>
+        <property name="nbHabitants"  column="nb_habitants" type="integer" not-null="true"/> 
+<!--         <property name="id_pays" type="integer" not-null="true"/> -->
+		<many-to-one name="pays" column="id_pays" not-null="true"/> 
         
 </class>
 

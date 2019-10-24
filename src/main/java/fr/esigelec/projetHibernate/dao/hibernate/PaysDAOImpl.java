@@ -5,6 +5,7 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
+import fr.esigelec.projetHibernate.dao.IPaysDAO;
 import fr.esigelec.projetHibernate.dto.Pays;
 import fr.esigelec.projetHibernate.dto.Ville;
 

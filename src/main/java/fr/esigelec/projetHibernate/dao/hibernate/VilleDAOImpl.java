@@ -6,6 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.query.Query;
 
 import fr.esigelec.projetHibernate.dto.Ville;
+import fr.esigelec.projetHibernate.dao.IVilleDAO;
 import fr.esigelec.projetHibernate.dao.hibernate.HibernateUtil;
 
 public class VilleDAOImpl implements IVilleDAO{

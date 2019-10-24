@@ -9,47 +9,47 @@ package fr.esigelec.projetHibernate.dto;
  */
 public class Ville {
 	private int id;
-	private int id_pays;	
+	private Pays pays;	
 	private String nom;
-	private int nb_habitants;
+	private int nbHabitants;
 
 	public Ville() {
 		
 	}
 	
-	public Ville(String nom, int nb_habitants) {
+	public Ville(String nom, int nbHabitants) {
 		this.nom = nom;
-		this.nb_habitants = nb_habitants ;
+		this.nbHabitants = nbHabitants ;
 	}
 	
 	public int getId() {
 		return id;
 	}
-	public int getIdPays() {
-		return id_pays;
+	public Pays getPays() {
+		return pays;
 	}
 	public String getNom() {
 		return nom;
 	}
 	public int getNbHabitants() {
-		return nb_habitants;
+		return nbHabitants;
 	}
 
 	public void setId(int id) {
 		this.id = id;
 	}
-	public void setIdPays(int id_pays) {
-		this.id_pays = id_pays;
+	public void setPays(Pays pays) {
+		this.pays = pays;
 	}
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	public void setNbHabitants(int nb_habitants) {
-		this.nb_habitants = nb_habitants;
+	public void setNbHabitants(int nbHabitants) {
+		this.nbHabitants = nbHabitants;
 	}
 	
 	public String toString() {
-		return "Ville (id: "+id+", id_pays: "+id_pays+", nom : "+nom+", Habitants: "+nb_habitants+"Millions d'habitants)";
+		return "Ville (id: "+id+", Pays: "+pays.toString()+", nom : "+nom+", Habitants: "+nbHabitants+"Millions d'habitants)";
 	}
 
 }
